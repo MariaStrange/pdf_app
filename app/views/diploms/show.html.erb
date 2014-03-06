@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @diplom.name %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @diplom.amount %>
+</p>
+
+<%= link_to 'Edit', edit_diplom_path(@diplom) %> |
+<%= link_to 'Back', diploms_path %>

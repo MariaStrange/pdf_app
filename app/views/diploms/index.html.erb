@@ -1,0 +1,29 @@
+<h1>Listing diploms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diploms.each do |diplom| %>
+      <tr>
+        <td><%= diplom.name %></td>
+        <td><%= diplom.amount %></td>
+        <td><%= link_to 'Show', diplom %></td>
+        <td><%= link_to 'Edit', edit_diplom_path(diplom) %></td>
+        <td><%= link_to 'Destroy', diplom, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Diplom', new_diplom_path %>
