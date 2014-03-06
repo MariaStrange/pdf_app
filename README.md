@@ -1,5 +1,3 @@
-# Ruby on Rails Tutorial: первое приложение
+# Ruby on Rails : приложение для генерации PDF
 
-Это первое приложение для
-[*Ruby on Rails Tutorial*](http://railstutorial.org/)
- [Майкл Хартл](http://michaelhartl.com/).
+
